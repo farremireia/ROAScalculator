@@ -22,7 +22,6 @@ $(function(){
         actionsValueM11: 0,
         actionsValueM12: 0,
 
-
         tenancyValueM1: 0,
         tenancyValueM2: 0,
         tenancyValueM3: 0,
@@ -42,19 +41,18 @@ $(function(){
         impactfeesOutput: $("#impact-fees-output"),
         impactsetupOutput: $("#impact-setup-output"),
 
-        actionsOutputM1: $("#actions-output"),
-        actionsOutputM2: $("#actions-output"),
-        actionsOutputM3: $("#actions-output"),
-        actionsOutputM4: $("#actions-output"),
-        actionsOutputM5: $("#actions-output"),
-        actionsOutputM6: $("#actions-output"),
-        actionsOutputM7: $("#actions-output"),
-        actionsOutputM8: $("#actions-output"),
-        actionsOutputM9: $("#actions-output"),
-        actionsOutputM10: $("#actions-output"),
-        actionsOutputM11: $("#actions-output"),
-        actionsOutputM12: $("#actions-output"),
-
+        actionsOutputM1: $("#actions-output-M1"),
+        actionsOutputM2: $("#actions-output-M2"),
+        actionsOutputM3: $("#actions-output-M3"),
+        actionsOutputM4: $("#actions-output-M4"),
+        actionsOutputM5: $("#actions-output-M5"),
+        actionsOutputM6: $("#actions-output-M6"),
+        actionsOutputM7: $("#actions-output-M7"),
+        actionsOutputM8: $("#actions-output-M8"),
+        actionsOutputM9: $("#actions-output-M9"),
+        actionsOutputM10: $("#actions-output-M10"),
+        actionsOutputM11: $("#actions-output-M11"),
+        actionsOutputM12: $("#actions-output-M12"),
 
         partnerCpaOutput: $("#partner-cpa-output"),
         scaleCostOutput: $("#scale-cost-output"),
@@ -98,7 +96,6 @@ $(function(){
         impactFeeM10: $("#impact-fee-M10"),
         impactFeeM11: $("#impact-fee-M11"),
         impactFeeM12: $("#impact-fee-M12"),
-
 
         scaleFeeM1: $("#scale-fee-M1"),
         scaleFeeM2: $("#scale-fee-M2"),
@@ -578,7 +575,7 @@ uiStorage.cpoM12.html("£" + Number.parseFloat(cpoM12).toFixed(2));
             calculate();
     	});
         $("#tenancy-input-M12").on("input", function(){
-            uiStorage.tenancyOutputM12.html(Number.parseInt($(this).val()).toLocaleString());
+            uiStorage.tenancyOutputM1.html(Number.parseInt($(this).val()).toLocaleString());
             calculate();
     	});
         
@@ -630,7 +627,6 @@ uiStorage.cpoM12.html("£" + Number.parseFloat(cpoM12).toFixed(2));
             uiStorage.actionsOutputM12.html(Number.parseInt($(this).val()).toLocaleString());
             calculate();
     	});
-
 
         $("#partner-cpa-slider").slider({
             min: 0,
