@@ -4,6 +4,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 <script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
 
+
 <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js"></script>
 
 <script>
@@ -17,7 +18,20 @@ $(function(){
         partnerCpaValue: 0,
         scaleCostValue: 0,
         conversionRateValue: 0,
-        actionsValue: 0,
+
+        actionsValueM1: 0,
+        actionsValueM2: 0,
+        actionsValueM3: 0,
+        actionsValueM4: 0,
+        actionsValueM5: 0,
+        actionsValueM6: 0,
+        actionsValueM7: 0,
+        actionsValueM8: 0,
+        actionsValueM9: 0,
+        actionsValueM10: 0,
+        actionsValueM11: 0,
+        actionsValueM12: 0,
+
 
         tenancyValueM1: 0,
         tenancyValueM2: 0,
@@ -37,7 +51,20 @@ $(function(){
         scalefeesOutput: $("#scale-fees-output"),
         impactfeesOutput: $("#impact-fees-output"),
         impactsetupOutput: $("#impact-setup-output"),
-        actionsOutput: $("#actions-output"),
+
+        actionsOutputM1: $("#actions-output"),
+        actionsOutputM2: $("#actions-output"),
+        actionsOutputM3: $("#actions-output"),
+        actionsOutputM4: $("#actions-output"),
+        actionsOutputM5: $("#actions-output"),
+        actionsOutputM6: $("#actions-output"),
+        actionsOutputM7: $("#actions-output"),
+        actionsOutputM8: $("#actions-output"),
+        actionsOutputM9: $("#actions-output"),
+        actionsOutputM10: $("#actions-output"),
+        actionsOutputM11: $("#actions-output"),
+        actionsOutputM12: $("#actions-output"),
+
 
         partnerCpaOutput: $("#partner-cpa-output"),
         scaleCostOutput: $("#scale-cost-output"),
@@ -180,8 +207,20 @@ $(function(){
         var valueScalefees = (Number.parseFloat(uiStorage.scalefeesOutput.html().replace(/,/g, '')));
         var valueImpactfees = (Number.parseFloat(uiStorage.impactfeesOutput.html().replace(/,/g, '')));
         var valueImpactsetup = (Number.parseFloat(uiStorage.impactsetupOutput.html().replace(/,/g, '')));
-		var valueActions = (Number.parseFloat(uiStorage.actionsOutput.html().replace(/,/g, '')));
-        
+		
+        var valueActionsM1 = (Number.parseFloat(uiStorage.actionsOutputM1.html().replace(/,/g, '')));
+        var valueActionsM2 = (Number.parseFloat(uiStorage.actionsOutputM2.html().replace(/,/g, '')));
+        var valueActionsM3 = (Number.parseFloat(uiStorage.actionsOutputM3.html().replace(/,/g, '')));
+        var valueActionsM4 = (Number.parseFloat(uiStorage.actionsOutputM4.html().replace(/,/g, '')));
+        var valueActionsM5 = (Number.parseFloat(uiStorage.actionsOutputM5.html().replace(/,/g, '')));
+        var valueActionsM6 = (Number.parseFloat(uiStorage.actionsOutputM6.html().replace(/,/g, '')));
+        var valueActionsM7 = (Number.parseFloat(uiStorage.actionsOutputM7.html().replace(/,/g, '')));
+        var valueActionsM8 = (Number.parseFloat(uiStorage.actionsOutputM8.html().replace(/,/g, '')));
+        var valueActionsM9 = (Number.parseFloat(uiStorage.actionsOutputM9.html().replace(/,/g, '')));
+        var valueActionsM10 = (Number.parseFloat(uiStorage.actionsOutputM10.html().replace(/,/g, '')));
+        var valueActionsM11 = (Number.parseFloat(uiStorage.actionsOutputM11.html().replace(/,/g, '')));
+        var valueActionsM12 = (Number.parseFloat(uiStorage.actionsOutputM12.html().replace(/,/g, '')));
+
         var valueTenancyM1 = (Number.parseFloat(uiStorage.tenancyOutputM1.html().replace(/,/g, '')));
         var valueTenancyM2 = (Number.parseFloat(uiStorage.tenancyOutputM2.html().replace(/,/g, '')));
         var valueTenancyM3 = (Number.parseFloat(uiStorage.tenancyOutputM3.html().replace(/,/g, '')));
@@ -199,18 +238,18 @@ $(function(){
 		var valueScaleCost = (Number.parseInt(uiStorage.scaleCostOutput.html()));
 		var valueConversionRate = (Number.parseInt(uiStorage.conversionRateOutput.html()))/100;
 
-        var salesRevenueM1 = valueActions * valueAov;
-        var salesRevenueM2 = valueActions * valueAov;
-        var salesRevenueM3 = valueActions * valueAov;
-        var salesRevenueM4 = valueActions * valueAov;
-        var salesRevenueM5 = valueActions * valueAov;
-        var salesRevenueM6 = valueActions * valueAov;
-        var salesRevenueM7 = valueActions * valueAov;
-        var salesRevenueM8 = valueActions * valueAov;
-        var salesRevenueM9 = valueActions * valueAov;
-        var salesRevenueM10 = valueActions * valueAov;
-        var salesRevenueM11 = valueActions * valueAov;
-        var salesRevenueM12 = valueActions * valueAov;
+        var salesRevenueM1 = valueActionsM1 * valueAov;
+        var salesRevenueM2 = valueActionsM2 * valueAov;
+        var salesRevenueM3 = valueActionsM3 * valueAov;
+        var salesRevenueM4 = valueActionsM4 * valueAov;
+        var salesRevenueM5 = valueActionsM5 * valueAov;
+        var salesRevenueM6 = valueActionsM6 * valueAov;
+        var salesRevenueM7 = valueActionsM7 * valueAov;
+        var salesRevenueM8 = valueActionsM8 * valueAov;
+        var salesRevenueM9 = valueActionsM9 * valueAov;
+        var salesRevenueM10 = valueActionsM10 * valueAov;
+        var salesRevenueM11 = valueActionsM11 * valueAov;
+        var salesRevenueM12 = valueActionsM12 * valueAov;
 
         var partnerCommissionM1 = (salesRevenueM1 * valuePartnerCPA) / 100;
         var partnerCommissionM2 = (salesRevenueM2 * valuePartnerCPA) / 100;
@@ -303,18 +342,18 @@ $(function(){
         var roasM11 = salesRevenueM11 / channelCostM11;
         var roasM12 = salesRevenueM12 / channelCostM12;
 
-        var cpoM1 = channelCostM1 / valueActions;
-        var cpoM2 = channelCostM2 / valueActions;
-        var cpoM3 = channelCostM3 / valueActions;
-        var cpoM4 = channelCostM4 / valueActions;
-        var cpoM5 = channelCostM5 / valueActions;
-        var cpoM6 = channelCostM6 / valueActions;
-        var cpoM7 = channelCostM7 / valueActions;
-        var cpoM8 = channelCostM8 / valueActions;
-        var cpoM9 = channelCostM9 / valueActions;
-        var cpoM10 = channelCostM10 / valueActions;
-        var cpoM11 = channelCostM11 / valueActions;
-        var cpoM12 = channelCostM12 / valueActions;
+        var cpoM1 = channelCostM1 / valueActionsM1;
+        var cpoM2 = channelCostM2 / valueActionsM2;
+        var cpoM3 = channelCostM3 / valueActionsM3;
+        var cpoM4 = channelCostM4 / valueActionsM4;
+        var cpoM5 = channelCostM5 / valueActionsM5;
+        var cpoM6 = channelCostM6 / valueActionsM6;
+        var cpoM7 = channelCostM7 / valueActionsM7;
+        var cpoM8 = channelCostM8 / valueActionsM8;
+        var cpoM9 = channelCostM9 / valueActionsM9;
+        var cpoM10 = channelCostM10 / valueActionsM10;
+        var cpoM11 = channelCostM11 / valueActionsM11;
+        var cpoM12 = channelCostM12 / valueActionsM12;
 
 uiStorage.partnerCommissionM1.html("£" + Number.parseFloat(partnerCommissionM1).toFixed(2));
 uiStorage.partnerCommissionM2.html("£" + Number.parseFloat(partnerCommissionM2).toFixed(2));
@@ -461,7 +500,18 @@ uiStorage.cpoM12.html("£" + Number.parseFloat(cpoM12).toFixed(2));
         uiStorage.tenancyOutputM11.html(Number.parseInt(defaults.tenancyValueM11.toLocaleString()));
         uiStorage.tenancyOutputM12.html(Number.parseInt(defaults.tenancyValueM12.toLocaleString()));
 
-        uiStorage.actionsOutput.html(Number.parseInt(defaults.actionsValue.toLocaleString()));
+        uiStorage.actionsOutputM1.html(Number.parseInt(defaults.actionsValueM1.toLocaleString()));
+        uiStorage.actionsOutputM2.html(Number.parseInt(defaults.actionsValueM2.toLocaleString()));
+        uiStorage.actionsOutputM3.html(Number.parseInt(defaults.actionsValueM3.toLocaleString()));
+        uiStorage.actionsOutputM4.html(Number.parseInt(defaults.actionsValueM4.toLocaleString()));
+        uiStorage.actionsOutputM5.html(Number.parseInt(defaults.actionsValueM5.toLocaleString()));
+        uiStorage.actionsOutputM6.html(Number.parseInt(defaults.actionsValueM6.toLocaleString()));
+        uiStorage.actionsOutputM7.html(Number.parseInt(defaults.actionsValueM7.toLocaleString()));
+        uiStorage.actionsOutputM8.html(Number.parseInt(defaults.actionsValueM8.toLocaleString()));
+        uiStorage.actionsOutputM9.html(Number.parseInt(defaults.actionsValueM9.toLocaleString()));
+        uiStorage.actionsOutputM10.html(Number.parseInt(defaults.actionsValueM10.toLocaleString()));
+        uiStorage.actionsOutputM11.html(Number.parseInt(defaults.actionsValueM11.toLocaleString()));
+        uiStorage.actionsOutputM12.html(Number.parseInt(defaults.actionsValueM12.toLocaleString()));
 
         uiStorage.partnerCpaOutput.html(defaults.partnerCpaValue);
         uiStorage.scaleCostOutput.html(defaults.scaleCostValue);
@@ -542,10 +592,55 @@ uiStorage.cpoM12.html("£" + Number.parseFloat(cpoM12).toFixed(2));
             calculate();
     	});
         
-        $("#actions-input").on("input", function(){
-            uiStorage.actionsOutput.html(Number.parseInt($(this).val()).toLocaleString());
+        $("#actions-input-M1").on("input", function(){
+            uiStorage.actionsOutputM1.html(Number.parseInt($(this).val()).toLocaleString());
             calculate();
     	});
+        $("#actions-input-M2").on("input", function(){
+            uiStorage.actionsOutputM2.html(Number.parseInt($(this).val()).toLocaleString());
+            calculate();
+    	});
+        $("#actions-input-M3").on("input", function(){
+            uiStorage.actionsOutputM3.html(Number.parseInt($(this).val()).toLocaleString());
+            calculate();
+    	});
+        $("#actions-input-M4").on("input", function(){
+            uiStorage.actionsOutputM4.html(Number.parseInt($(this).val()).toLocaleString());
+            calculate();
+    	});
+        $("#actions-input-M5").on("input", function(){
+            uiStorage.actionsOutputM5.html(Number.parseInt($(this).val()).toLocaleString());
+            calculate();
+    	});
+        $("#actions-input-M6").on("input", function(){
+            uiStorage.actionsOutputM6.html(Number.parseInt($(this).val()).toLocaleString());
+            calculate();
+    	});
+        $("#actions-input-M7").on("input", function(){
+            uiStorage.actionsOutputM7.html(Number.parseInt($(this).val()).toLocaleString());
+            calculate();
+    	});
+        $("#actions-input-M8").on("input", function(){
+            uiStorage.actionsOutputM8.html(Number.parseInt($(this).val()).toLocaleString());
+            calculate();
+    	});
+        $("#actions-input-M9").on("input", function(){
+            uiStorage.actionsOutputM9.html(Number.parseInt($(this).val()).toLocaleString());
+            calculate();
+    	});
+        $("#actions-input-M10").on("input", function(){
+            uiStorage.actionsOutputM10.html(Number.parseInt($(this).val()).toLocaleString());
+            calculate();
+    	});
+        $("#actions-input-M11").on("input", function(){
+            uiStorage.actionsOutputM11.html(Number.parseInt($(this).val()).toLocaleString());
+            calculate();
+    	});
+        $("#actions-input-M12").on("input", function(){
+            uiStorage.actionsOutputM12.html(Number.parseInt($(this).val()).toLocaleString());
+            calculate();
+    	});
+
 
         $("#partner-cpa-slider").slider({
             min: 0,
