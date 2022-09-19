@@ -627,7 +627,6 @@ uiStorage.cpoM12.html("£" + Number.parseFloat(cpoM12).toFixed(2));
             uiStorage.actionsOutputM12.html(Number.parseInt($(this).val()).toLocaleString());
             calculate();
     	});
-/*
         $("#partner-cpa-slider").slider({
             min: 0,
             max: 100,
@@ -659,7 +658,6 @@ uiStorage.cpoM12.html("£" + Number.parseFloat(cpoM12).toFixed(2));
               calculate();
             }
         });
-*/
 
         calculate();
 });
