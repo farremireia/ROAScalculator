@@ -1,3 +1,9 @@
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+<script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
+<script>
 $(function(){
 	var defaults = {
         aovValue: 0,
@@ -666,3 +672,4 @@ uiStorage.cpoM12.html("£" + Number.parseFloat(cpoM12).toFixed(2));
 
         calculate();
 });
+</script>
