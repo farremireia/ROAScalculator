@@ -494,47 +494,47 @@ uiStorage.tenancyOutputM1.html(Number.parseInt($(this).val()).toLocaleString());
 calculate();
 	});
 $("#tenancy-input-M2").on("input", function(){
-uiStorage.tenancyOutputM1.html(Number.parseInt($(this).val()).toLocaleString());
+uiStorage.tenancyOutputM2.html(Number.parseInt($(this).val()).toLocaleString());
 calculate();
 	});
 $("#tenancy-input-M3").on("input", function(){
-uiStorage.tenancyOutputM1.html(Number.parseInt($(this).val()).toLocaleString());
+uiStorage.tenancyOutputM3.html(Number.parseInt($(this).val()).toLocaleString());
 calculate();
 	});
 $("#tenancy-input-M4").on("input", function(){
-uiStorage.tenancyOutputM1.html(Number.parseInt($(this).val()).toLocaleString());
+uiStorage.tenancyOutputM4.html(Number.parseInt($(this).val()).toLocaleString());
 calculate();
 	});
 $("#tenancy-input-M5").on("input", function(){
-uiStorage.tenancyOutputM1.html(Number.parseInt($(this).val()).toLocaleString());
+uiStorage.tenancyOutputM5.html(Number.parseInt($(this).val()).toLocaleString());
 calculate();
 	});
 $("#tenancy-input-M6").on("input", function(){
-uiStorage.tenancyOutputM1.html(Number.parseInt($(this).val()).toLocaleString());
+uiStorage.tenancyOutputM6.html(Number.parseInt($(this).val()).toLocaleString());
 calculate();
 	});
 $("#tenancy-input-M7").on("input", function(){
-uiStorage.tenancyOutputM1.html(Number.parseInt($(this).val()).toLocaleString());
+uiStorage.tenancyOutputM7.html(Number.parseInt($(this).val()).toLocaleString());
 calculate();
 	});
 $("#tenancy-input-M8").on("input", function(){
-uiStorage.tenancyOutputM1.html(Number.parseInt($(this).val()).toLocaleString());
+uiStorage.tenancyOutputM8.html(Number.parseInt($(this).val()).toLocaleString());
 calculate();
 	});
 $("#tenancy-input-M9").on("input", function(){
-uiStorage.tenancyOutputM1.html(Number.parseInt($(this).val()).toLocaleString());
+uiStorage.tenancyOutputM9.html(Number.parseInt($(this).val()).toLocaleString());
 calculate();
 	});
 $("#tenancy-input-M10").on("input", function(){
-uiStorage.tenancyOutputM1.html(Number.parseInt($(this).val()).toLocaleString());
+uiStorage.tenancyOutputM10.html(Number.parseInt($(this).val()).toLocaleString());
 calculate();
 	});
 $("#tenancy-input-M11").on("input", function(){
-uiStorage.tenancyOutputM1.html(Number.parseInt($(this).val()).toLocaleString());
+uiStorage.tenancyOutputM11.html(Number.parseInt($(this).val()).toLocaleString());
 calculate();
 	});
 $("#tenancy-input-M12").on("input", function(){
-uiStorage.tenancyOutputM1.html(Number.parseInt($(this).val()).toLocaleString());
+uiStorage.tenancyOutputM12.html(Number.parseInt($(this).val()).toLocaleString());
 calculate();
 	});
 $("#actions-input-M1").on("input", function(){
